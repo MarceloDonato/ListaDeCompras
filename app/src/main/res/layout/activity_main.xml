@@ -22,17 +22,19 @@
             android:background="@color/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.Light"
             app:title="Lista De Compras"
-            app:titleTextColor="#FFFFFF"></androidx.appcompat.widget.Toolbar>
+            app:titleTextColor="#FFFFFF">
+        </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
     <EditText
         android:id="@+id/edittext_item"
-        android:layout_width="300dp"
+        android:layout_width="274dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/app_bar"
         android:layout_marginTop="112dp"
         android:layout_marginBottom="0dp"
-        android:hint="item da compra " />
+        android:hint="item da compra "
+        />
 
     <Button
         android:id="@+id/add_item"
@@ -46,6 +48,8 @@
         android:layout_marginEnd="6dp"
         android:layout_marginBottom="0dp"
         android:layout_toEndOf="@+id/edittext_item"
+        android:background="@drawable/custom_button"
+        android:textColor="@android:color/white"
         android:text="ADD" />
 
 
@@ -55,6 +59,7 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/edittext_item"
         android:background="#FFFFFF"
+        tools:listitem="@layout/produto"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 
